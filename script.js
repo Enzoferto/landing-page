@@ -31,3 +31,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Seleccionamos el botón de hamburguesa y la barra de navegación
+const hamburger = document.getElementById('hamburger-menu');
+const navBar = document.getElementById('nav-bar');
+
+// Añadimos un evento de clic al ícono de la hamburguesa
+hamburger.addEventListener('click', () => {
+    navBar.classList.toggle('active');  // Añadimos o quitamos la clase "active"
+});
+
+// const iframe = document.querySelector('iframe');
+// const videoBox = document.getElementById('videoBox');
+// const player = new YT.Player(iframe, {
+//     events: {
+//         'onStateChange': onPlayerStateChange
+//     }
+// });

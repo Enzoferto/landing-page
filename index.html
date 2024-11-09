@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1.0>
     <title>Kpop Streaming Service</title>
 </head>
 
@@ -14,17 +14,24 @@
             <img id="header-img" class="header-img" src="assets/6576de23a96aa9c79f231ca6.png">
             <img id="header-img" class="header-img" src="assets/BLACKPINK-Logo-PNG-Transparent.png">
             <img id="header-img" class="header-img" src="assets/itzy-5e838459bc3d9.png">
+        </div>
+        <!-- Ícono de la hamburguesa -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav-bar" class="nav-bar">
+            <div class="nav-link-box">
+                <div class="separadorVertical"></div>
+                <a class="nav-link" href="#boxTitle">Inicio</a>
+                <a class="nav-link" href="#boxInfo">Información</a>
+                <a class="nav-link" href="#videoBox">Contenido</a>
+                <a class="nav-link" href="#pricingBox">Precios</a>
+                <a class="nav-link" href="#formBox">Formulario</a>
+            </div>
 
-            <nav id="nav-bar" class="nav-bar">
-                <div class="nav-link-box">
-                    <div class="separadorVertical"></div>
-                    <a class="nav-link" href="#boxTitle">Inicio</a>
-                    <a class="nav-link" href="#boxInfo">Información</a>
-                    <a class="nav-link" href="#videoBox">Contenido</a>
-                    <a class="nav-link" href="#pricingBox">Precios</a>
-                    <a class="nav-link" href="#formBox">Formulario</a>
-                </div>
-            </nav>
+        </nav>
     </header>
     <main>
         <div id="boxTitle" class="boxTitle">
@@ -32,7 +39,7 @@
             <h2>El mejor servicio de streaming para todos los fanáticos del K-pop, con acceso ilimitado a tus artistas y
                 grupos favoritos.</h2>
         </div>
-        <hr>
+        <hr class="separadorPrincipal">
 
         <div id="boxInfo" class="boxInfo">
             <ul>
@@ -47,11 +54,15 @@
                     exclusivo de artistas que solo encontrarás en nuestra plataforma.</li>
             </ul>
         </div>
-        <hr>
+        <hr class="separadorPrincipal">
 
         <div id="videoBox" class="videoBox">
-            <iframe src="https://www.youtube.com/embed/Stv7EVXxNwU"
+            <iframe src="https://www.youtube.com/embed/Stv7EVXxNwU" class="iframeWeb"
                 title="ITZY (있지) _ UNTOUCHABLE | 1theKILLPO | 원더킬포 | 킬포인트 | 퍼포먼스 | Performance | 4K" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="iframeMobile" src="https://www.youtube.com/embed/5t1qzkY6GfY"
+                title="[릴레이댄스] LE SSERAFIM (르세라핌) - CRAZY (4K)" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -68,6 +79,7 @@
                 </ul>
                 <button>Suscribirse</button>
             </div>
+            <hr class="separadorHorizontal">
             <div class="planBox">
                 <h2>Plan Premium</h2>
                 <p>Disfruta de la mejor experiencia con calidad de sonido superior y más beneficios.</p>
@@ -80,6 +92,7 @@
                 </ul>
                 <button>Suscribirse</button>
             </div>
+            <hr class="separadorHorizontal">
             <div class="planBox">
                 <h2>Plan VIP</h2>
                 <p>Accede a todo el contenido premium y vive una experiencia exclusiva como nunca antes.</p>
@@ -98,7 +111,7 @@
             <div id="formBox" class="formBox">
                 <h2>Para más información</h2>
                 <p>Introduce tu correo electrónico y te enviaremos más detalles:</p>
-                <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+                <form id="form" method="get">
                     <input id="email" placeholder="Liomessi@gmail.com" type="email" name="email"></input>
                     <input id="submit" type="submit" value="submit"></input>
                 </form>
@@ -108,3 +121,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
+</html>
