@@ -261,7 +261,9 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 1.2rem;
+    margin: 0 auto 0 auto;
 }
 
 .formBox h2 {
@@ -330,6 +332,8 @@ footer {
     background-color: var(--colorLetrasSecundario);
     border-radius: 5px;
 }
+
+
 
 
 /* monitores chicos*/
