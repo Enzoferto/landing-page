@@ -1,0 +1,292 @@
+
+@import url('https://fonts.cdnfonts.com/css/reem-kufi-fun');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Reem Kufi Fun', sans-serif;
+                                                
+}
+
+:root {
+    --colorFondo: #121212;
+    --colorHeader: #2f4858;
+    --colorPlanBoxes: linear-gradient(180deg, rgba(18, 18, 18, 1) 0%, rgba(47, 72, 88, 1) 10%, rgba(18, 18, 18, 1) 50%, rgba(47, 72, 88, 1)90%, rgba(18, 18, 18, 1) 100%);
+    --colorLetras:#FF4B00 ;
+    --colorLetrasSecundario: #f6008d;
+    --colorLetrasTerceario: #48fff6;
+    --colorButton1: #00c896;
+    --colorButton2: #e98127;
+    --colorButton3: #fa9fa2;
+    --backgroundColorVideo:  radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(55,42,140,1) 35%, rgba(55,42,140,1) 36%, rgba(63,55,140,0.7) 37%, rgba(100,28,140,1) 45%, rgba(128,59,154,1) 46%, rgba(116,55,140,1) 47%, rgba(0,155,165,0.5) 75%, rgba(18,18,18,1) 100%);
+    /* radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(55,42,140,1) 20%, rgba(65,59,154,1) 21%, rgba(63,55,140,1) 22%, rgba(100,28,140,1) 45%, rgba(128,59,154,1) 46%, rgba(116,55,140,1) 47%, rgba(18,18,18,1) 85%); */
+}
+html{
+    scroll-snap-type: y proximity;
+}
+
+body {
+    background-color: var(--colorFondo);
+}
+
+header {
+    display: flex;
+    height: 130px;
+    width: 100%;
+    background-color: var(--colorHeader);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid white;
+    z-index: 99;
+
+}
+
+.logoBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+
+
+}
+
+.header-img {
+    width: 175px;
+    margin: 0 10px 0 30px;
+
+}
+
+.nav-bar {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.separadorVertical{
+    border-left:2px solid var(--colorButton1);
+    height: 50% ;
+}
+
+.nav-link {
+    margin: 20px;
+    background-color: var(--colorHeader);
+    color: white;
+    padding: 10px;
+    text-decoration:none;
+    height: fit-content;
+}
+
+.nav-link:last-child {
+    margin-right: 50px;
+}
+
+.boxTitle {
+    height: 150px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 100px 0 35px 0;
+}
+.boxTitle h1 span{
+    color: var(--colorLetrasSecundario);
+}
+
+.boxTitle h2 {
+    font-size: 1.8rem;
+    margin: 40px;
+}
+hr{
+    width: 65%;
+    margin: 5% 17.25% 5% 17.25%;
+    border-color: var(--colorLetrasSecundario)
+}
+hr:nth-last-of-type(1){
+    width: 50%;
+    margin: 5% 25% 5% 25%;
+    border-color: var(--colorLetras)
+}
+.boxInfo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.4rem;
+    margin: 100px 20% 100px 20%;
+    text-align: start;
+    width:65% ;
+}
+
+.boxInfo li {
+    margin: 30px 0 30px 0;
+    list-style: none;
+    color: rgb(230, 230, 230);
+}
+.boxInfo li span strong{
+    color: var(--colorLetras);
+}
+
+.videoBox {
+    width: 100%;
+    height: calc(100vh - 130px);
+    background: var(--backgroundColorVideo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align:;
+}
+
+iframe {
+    width: 60%;
+    height: 80%;
+    box-shadow: 0px 0px 100px #ffffffce;
+}
+
+.pricingBox {
+    font-size: 1.2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0% 8% 0%;
+}
+
+.planBox {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 650px;
+    margin: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--colorPlanBoxes);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(47, 72, 88, 1) 0.20%, rgba(47, 72, 88, 1) 50%, rgba(47, 72, 88, 1) 99.80%, rgba(255, 255, 255, 1) 100%)1;
+    transition: transform 0.3s ease;
+}
+
+.planBox:hover {
+    transform: scale(1.02);
+}
+
+.planBox h2 {
+    margin-top: 100px;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--colorLetrasTerceario)
+}
+
+.planBox p:nth-of-type(2) {
+    font-size: 1.4rem;
+    margin: 40px 0 25px 0;
+}
+.planBox p:nth-of-type(2) strong{
+    color:var(--colorLetrasTerceario)
+}
+
+.planBox li {
+    list-style: none;
+    margin: 4px 0 4px 0;
+}
+
+.planBox button {
+    height: 45px;
+    width: 140px;
+    margin-bottom: 100px;
+    margin-top: auto;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-top-color: bisque;
+    border-left-color: bisque;
+}
+.pricingBox .planBox:nth-child(1) button{
+    background-color: var(--colorButton1);
+}
+.pricingBox .planBox:nth-child(2) button{
+    background-color: var(--colorButton2);
+}
+.pricingBox .planBox:nth-child(3) button{
+    background-color: var(--colorButton3);
+}
+
+.planBox button:hover {
+    transform: scale(1.1);
+
+}
+
+.formBox {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.formBox h2 {
+    margin-right: 5px;
+}
+
+form {
+    display: flex;
+    margin: 0 20px 0 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+input {
+    font-size: 1rem;
+    border-radius: 20px 0 0 20px;
+}
+
+form :first-child {
+    padding-right: 30px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    color: #121212;
+}
+
+form :last-child {
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: -20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #58C9DF;
+    color: #121212;
+}
+
+form :last-child:hover {
+    transform: scale(1.1);
+    border: 1px solid black;
+    border-left: none;
+}
+
+footer {
+    background-color: var(--colorHeader);
+    border-top: 1px solid  ;
+    border-color: white;
+}
+@media (max-width:900px){
+    
+}
